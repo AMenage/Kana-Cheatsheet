@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kana Cheatsheet</title>
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="kanaApp.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>KATAKANA CHEATSHEET</h1>
+		<header>
+		
+		<!-- Character Display -->
+		<aside>
+			<p>Stroke order:</p>
+			<img id="kanaChar" class="strokeOrder" src="katakana/a/a-Kata-stroke.png">
+			<button onclick="pronounce()">
+				<img class="audioButton" src="audio.png">
+			</button>
+		</aside>
+		
+		<article>
+			<!-- Hiragana Button Layout -->
+			<div class="grid-container">
+				<div class="grid-item">
+					<button 
+					onclick="changeChar('katakana/a/a-Kata-stroke.png', 
+					'katakana/a/a.wav')">
+						<img class="charSelect" src="katakana/a/katakana-a.png">
+					</button>
+				</div>
+			</div>
+		</article>
+		
+		<footer>
+			<a class="kanaSwitch" href="hiragana.html">
+				<h2>HIRAGANA CHEATSHEET</h2>
+			</a>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kana Cheatsheet</title>
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="kanaApp.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>HIRAGANA CHEATSHEET</h1>
+		<header>
+		
+		<!-- Character Display -->
+		<aside>
+			<p>Stroke order:</p>
+			<img id="kanaChar" class="strokeOrder" src="hiragana/a/a-Hira-stroke.png">
+			<button onclick="pronounce()">
+				<img class="audioButton" src="audio.png">
+			</button>
+		</aside>
+		
+		<article>
+			<!-- Hiragana Button Layout -->
+			<div class="grid-container">
+				<div class="grid-item">
+					<button 
+					onclick="changeChar('hiragana/a/a-Hira-stroke.png', 
+					'hiragana/a/a.wav')">
+						<img class="charSelect" src="hiragana/a/hiragana-a.png">
+					</button>
+				</div>
+				<div class="grid-item">
+					<button 
+					onclick="changeChar('hiragana/i/i-Hira-stroke.png', 
+					'hiragana/i/i.wav')">
+						<img class="charSelect" src="hiragana/i/hiragana-i.png">
+					</button>
+				</div>
+				<div class="grid-item">
+					<button 
+					onclick="changeChar('hiragana/u/u-Hira-stroke.png', 
+					'hiragana/u/u.wav')">
+						<img class="charSelect" src="hiragana/u/hiragana-u.png">
+					</button>
+				</div>
+				<div class="grid-item">
+					<button 
+					onclick="changeChar('hiragana/e/e-Hira-stroke.png', 
+					'hiragana/e/e.wav')">
+						<img class="charSelect" src="hiragana/e/hiragana-e.png">
+					</button>
+				</div>
+				<div class="grid-item">
+					<button 
+					onclick="changeChar('hiragana/o/o-Hira-stroke.png', 
+					'hiragana/o/o.wav')">
+						<img class="charSelect" src="hiragana/o/hiragana-o.png">
+					</button>
+				</div>
+			<!--	<div class="grid-item">
+					<button onclick="playAudio('hiragana/ka/ka.wav')">
+						<img class="charSelect" src="hiragana/ka/hiragana-ka.png">
+					</button>
+				</div>
+				<div class="grid-item">
+					<button onclick="playAudio('hiragana/ki/ki.wav')">
+						<img class="charSelect" src="hiragana/ki/hiragana-ki.png">
+					</button>
+				</div>
+				<div class="grid-item">
+					<button onclick="playAudio('hiragana/ku/ku.wav')">
+						<img class="charSelect" src="hiragana/ku/hiragana-ku.png">
+					</button>
+				</div>
+				<div class="grid-item">
+					<button onclick="playAudio('hiragana/ke/ke.wav')">
+						<img class="charSelect" src="hiragana/ke/hiragana-ke.png">
+					</button>
+				</div>
+				<div class="grid-item">
+					<button onclick="playAudio('hiragana/ko/ko.wav')">
+						<img class="charSelect" src="hiragana/ko/hiragana-ko.png">
+					</button>
+				</div> -->
+			</div>
+		</article>
+		
+		<footer>
+			<a class="kanaSwitch" href="katakana.html">
+				<h2>KATAKANA CHEATSHEET</h2>
+			</a>
+		</footer>
+	</body>
+</html>

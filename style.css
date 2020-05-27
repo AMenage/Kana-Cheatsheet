@@ -1,0 +1,56 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	border-style: dashed;
+}
+
+.grid-item {
+	background-color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+.charSelect {
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+}
+
+.strokeOrder {
+	height: 200px;
+	width: 200px;
+}
+
+.audioButton {
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+
+.kanaSwitch:link {
+	text-decoration: none;
+}
+
+.kanaSwitch:visited {
+	text-decoration: none;
+}
+
+.kanaSwitch:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+h1 {
+	color: red;
+	text-align: center;
+	font-size: 50px;
+}
+
+h2 {
+	color: red;
+	text-align: center;
+}
+
+aside {
+	float: left;
+}
