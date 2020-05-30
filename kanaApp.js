@@ -5,25 +5,20 @@ var hiraganaPage = true;
 var charFolderAudio = 'hiragana/a/a.wav'; // Pronunciation audio file storage
 var charFolderStroke; 					  // Stroke order file storage
 
-// Play pronunciation of kana character
-function playAudio(aSource) {
-	var audio = new Audio(aSource);
-	window.alert(aSource);
-	audio.play();
-}
-
 // Change selected kana character at side of browser
 function changeChar(theChar) {
+  // Change hiragana character if selected in hiragana page
   if (hiraganaPage == true) {
 	  charFolderAudio = "hiragana/" + theChar + "/" + theChar + ".wav";
 	  charFolderStroke = "hiragana/" + theChar + "/" + theChar + "-Hira-stroke.png";
   }
+  // Change katakana character if selected in katakana page
   else {
 	  charFolderAudio = "katakana/" + theChar + "/" + theChar + ".wav";
 	  charFolderStroke = "katakana/" + theChar + "/" + theChar + "-Kata-stroke.png";
   }
+  // Change file location of kana stroke order 
   document.getElementById("kanaChar").src = charFolderStroke;
-  playAudio(charFolderAudio);
 }
 
 // Play stored pronunciation
