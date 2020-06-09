@@ -1,5 +1,10 @@
-// Cheatsheet reference variable; user starts in hiragana cheatsheet
-var hiraganaPage = true;
+// Array of kana cheatsheet locations
+var pageArray = [hiragana.html, katakana.html]; 
+var currentPage; 					  // Cheatsheet filler
+// Check for current cheatsheet
+/*if (window.location.href == pageArray[0]) {
+	currentPage = "hira";
+} else if*/ 
 
 // Character folder variables
 var charFolderAudio = 'hiragana/a/a.wav'; // Pronunciation audio file storage
@@ -11,9 +16,7 @@ function changeChar(theChar) {
   if (hiraganaPage == true) {
 	  charFolderAudio = "hiragana/" + theChar + "/" + theChar + ".wav";
 	  charFolderStroke = "hiragana/" + theChar + "/" + theChar + "-Hira-stroke.png";
-  }
-  // Change katakana character if selected in katakana page
-  else {
+  } else { // Change katakana character if selected in katakana page
 	  charFolderAudio = "katakana/" + theChar + "/" + theChar + ".wav";
 	  charFolderStroke = "katakana/" + theChar + "/" + theChar + "-Kata-stroke.png";
   }
@@ -27,15 +30,7 @@ function pronounce() {
 	audio.play();
 }
 
-// Check if user is in hiragana or katakana page
-function pageCheck(pCon) {
-	if (pCon == "hira") {
-		var hiraganaPage = true;
-	}
-	else if (pCon == "kata") {
-		var hiraganaPage = false;
-	}
-	else {
-		window.alert("Error: Page not available."); // For unspecified page
-	}
+// Button for debugging
+function bugger() {
+	alert(document.URL);
 }
