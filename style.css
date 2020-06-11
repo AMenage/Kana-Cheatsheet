@@ -53,4 +53,6 @@ h2 {
 
 aside {
 	float: left;
+	padding: 10px;
+	border-style: dashed;
 }

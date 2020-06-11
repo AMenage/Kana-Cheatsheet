@@ -16,6 +16,7 @@ function changeChar(theChar) {
   }
   // Change file location of kana stroke order 
   document.getElementById("kanaChar").src = charFolderStroke;
+  document.getElementById("romaji").innerHTML = theChar;
 }
 
 // Play stored pronunciation
