@@ -1,7 +1,8 @@
 .grid-container {
 	display: grid;
+	grid-column-gap: 10px;
+	padding: 10px;
 	grid-template-columns: auto auto auto auto auto;
-	border-style: dashed;
 }
 
 .grid-item {
@@ -40,6 +41,17 @@
 	text-decoration: underline;
 }
 
+.kanaButton {
+	background-color: white;
+	color: red;
+	border: 2x solid #FF0000;
+	transition-duration: 0.4s;
+}
+
+.kanaButton:hover {
+	background-color: #FF0000;
+}
+
 h1 {
 	color: red;
 	text-align: center;
@@ -55,4 +67,8 @@ aside {
 	float: left;
 	padding: 10px;
 	border-style: dashed;
+}
+
+p {
+	margin: 0px 1px;
 }
